@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Disallow any future admin or API paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard/
+
+# Sitemap
+Sitemap: https://krivaanlabs.com/sitemap.xml
+
+# Crawl-delay for well-behaved bots
+Crawl-delay: 2

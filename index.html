@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krivaan Labs – Building Intelligent Software for Businesses of Tomorrow</title>
+  <meta name="description" content="Krivaan Labs builds AI agents, enterprise APIs, workflow automation, and cloud solutions to power the next generation of intelligent businesses." />
+  <link rel="canonical" href="https://krivaanlabs.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://krivaanlabs.com/" />
+  <meta property="og:title"       content="Krivaan Labs – Building Intelligent Software for Businesses of Tomorrow" />
+  <meta property="og:description" content="AI agents, enterprise APIs, workflow automation and cloud consulting for the businesses of tomorrow." />
+  <meta property="og:image"       content="https://krivaanlabs.com/assets/images/og-home.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@krivaanlabs" />
+  <meta name="twitter:title"       content="Krivaan Labs" />
+  <meta name="twitter:description" content="AI agents, enterprise APIs, workflow automation and cloud consulting." />
+  <meta name="twitter:image"       content="https://krivaanlabs.com/assets/images/og-home.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" sizes="180x180" />
+  <link rel="manifest"         href="manifest.json" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Krivaan Labs",
+    "url": "https://krivaanlabs.com",
+    "logo": "https://krivaanlabs.com/assets/logos/krivaan-labs.svg",
+    "description": "AI agents, enterprise APIs, workflow automation and cloud consulting.",
+    "sameAs": [
+      "https://linkedin.com/company/krivaanlabs",
+      "https://github.com/krivaanlabs",
+      "https://twitter.com/krivaanlabs"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "hello@krivaanlabs.com"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════════════════════════ -->
+<header role="banner">
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav__logo" aria-label="Krivaan Labs – Home">
+        <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+          <path d="M8 10l8 6-8 6V10z" fill="#fff" opacity=".9"/>
+          <path d="M17 10h7v12h-7l5-6-5-6z" fill="#fff" opacity=".6"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+              <stop offset="0%" stop-color="#4F8CFF"/>
+              <stop offset="100%" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        Krivaan Labs
+      </a>
+
+      <!-- Links -->
+      <nav class="nav__links" id="nav-links" aria-label="Site pages">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav__spacer"></div>
+
+      <!-- Actions -->
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--ghost btn--sm">Book Demo</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Get Started</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="nav__hamburger" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════════════════ -->
+<section class="hero" aria-labelledby="hero-title">
+
+  <!-- Particles canvas -->
+  <canvas id="particles-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+
+  <!-- Aurora gradient blobs -->
+  <div class="aurora" aria-hidden="true">
+    <div class="aurora__orb aurora__orb--1"></div>
+    <div class="aurora__orb aurora__orb--2"></div>
+    <div class="aurora__orb aurora__orb--3"></div>
+  </div>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <div class="hero__content">
+
+      <div class="hero__badge hero-enter-1">
+        <span class="hero__badge-dot"></span>
+        Now Accepting Enterprise Clients
+      </div>
+
+      <h1 id="hero-title" class="hero__headline hero-enter-2">
+        Building <span class="text-gradient">Intelligent Software</span><br />
+        for Businesses of Tomorrow.
+      </h1>
+
+      <p class="hero__sub hero-enter-3">
+        AI &nbsp;•&nbsp; Automation &nbsp;•&nbsp; Enterprise Software
+      </p>
+
+      <p class="hero__description hero-enter-3">
+        We design and build AI-powered products, enterprise APIs, and cloud-native
+        systems that help forward-thinking organisations move faster and scale further.
+      </p>
+
+      <div class="hero__buttons hero-enter-4">
+        <a href="contact.html" class="btn btn--primary btn--lg">
+          Get Started
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="products.html" class="btn btn--ghost btn--lg">
+          Explore Products
+        </a>
+      </div>
+
+      <div class="hero__metrics hero-enter-5" aria-label="Company metrics">
+        <div class="hero__metric">
+          <div class="hero__metric-value">50<span style="color:var(--clr-accent)">+</span></div>
+          <div class="hero__metric-label">Projects Delivered</div>
+        </div>
+        <div class="hero__metric">
+          <div class="hero__metric-value">20<span style="color:var(--clr-accent)">+</span></div>
+          <div class="hero__metric-label">Enterprise Clients</div>
+        </div>
+        <div class="hero__metric">
+          <div class="hero__metric-value">8<span style="color:var(--clr-accent)">+</span></div>
+          <div class="hero__metric-label">Countries</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hero Illustration -->
+    <div class="hero__illustration hero-enter-4" aria-hidden="true">
+      <svg viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer ring -->
+        <circle cx="220" cy="220" r="200" stroke="rgba(79,140,255,0.12)" stroke-width="1"/>
+        <circle cx="220" cy="220" r="160" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
+        <circle cx="220" cy="220" r="120" stroke="rgba(79,140,255,0.08)" stroke-width="1"/>
+        <!-- Center orb -->
+        <circle cx="220" cy="220" r="68" fill="url(#heroOrb)" opacity=".9"/>
+        <circle cx="220" cy="220" r="52" fill="rgba(79,140,255,0.08)" stroke="rgba(79,140,255,0.3)" stroke-width="1"/>
+        <!-- Brain icon paths -->
+        <path d="M205 210 q0-18 15-18 t15 18 q6 0 6 8 t-6 8 h-30 q-6 0-6-8 t6-8z"
+              fill="none" stroke="#4F8CFF" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M208 210 v8 M220 200 v-6 M232 210 v8"
+              stroke="#4F8CFF" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M210 226 l4 6 h12 l4-6"
+              fill="none" stroke="#4F8CFF" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Orbiting dots -->
+        <circle cx="220" cy="60" r="6" fill="#4F8CFF" opacity=".8"/>
+        <circle cx="380" cy="220" r="5" fill="#8B5CF6" opacity=".8"/>
+        <circle cx="220" cy="380" r="6" fill="#00E5A8" opacity=".8"/>
+        <circle cx="60" cy="220" r="5" fill="#4F8CFF" opacity=".6"/>
+        <!-- Connecting lines (grid) -->
+        <path d="M110 110 L220 60 L330 110 L380 220 L330 330 L220 380 L110 330 L60 220 Z"
+              stroke="rgba(79,140,255,0.15)" stroke-width="1" fill="none"/>
+        <!-- Small feature icons at corners -->
+        <!-- AI Agent icon (top) -->
+        <rect x="200" y="38" width="40" height="30" rx="8" fill="rgba(79,140,255,0.12)" stroke="rgba(79,140,255,0.3)" stroke-width="1"/>
+        <text x="210" y="57" font-family="monospace" font-size="10" fill="#93b8ff">AI</text>
+        <!-- API icon (right) -->
+        <rect x="358" y="200" width="40" height="30" rx="8" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+        <text x="362" y="219" font-family="monospace" font-size="9" fill="#c4b5fd">API</text>
+        <!-- Cloud icon (bottom) -->
+        <rect x="200" y="368" width="40" height="28" rx="8" fill="rgba(0,229,168,0.1)" stroke="rgba(0,229,168,0.3)" stroke-width="1"/>
+        <text x="202" y="386" font-family="monospace" font-size="8" fill="#00E5A8">Cloud</text>
+        <!-- Auto icon (left) -->
+        <rect x="38" y="200" width="44" height="30" rx="8" fill="rgba(79,140,255,0.1)" stroke="rgba(79,140,255,0.2)" stroke-width="1"/>
+        <text x="42" y="219" font-family="monospace" font-size="8" fill="#93b8ff">Auto</text>
+        <defs>
+          <radialGradient id="heroOrb" cx="40%" cy="35%">
+            <stop offset="0%" stop-color="#1e3a6e"/>
+            <stop offset="100%" stop-color="#080c1f"/>
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     TRUSTED TECHNOLOGIES
+════════════════════════════════════════════════════════════════════════ -->
+<section class="tech" aria-label="Technologies we work with">
+  <p class="tech__label">Technologies We Work With</p>
+  <div class="tech__logos stagger-children">
+
+    <!-- Java -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="Java">
+        <path d="M12 22s-1.5.9 1 1.2c3 .3 4.5.3 7.8-.3 0 0 .9.5 2 1C17 25.8 8 24.7 12 22z" fill="#f89820"/>
+        <path d="M11 19s-1.7 1.2 1 1.5c2.4.3 6.1.3 8.5 0 0 0 .6.6 1.6 1C16 22.3 7 21.7 11 19z" fill="#f89820"/>
+        <path d="M18 14.4c1.6 1.8-.4 3.4-.4 3.4s3.9-2 2.1-4.5c-1.7-2.3-3-3.5 4-7.4 0 0-11 2.7-5.7 8.5z" fill="#f89820"/>
+        <path d="M25 24.5s1.1.9-1.2 1.6c-4.4 1.3-18.3 1.7-22.2 0-1.4-.6.2-1.4 1.3-1.2.5.1 1 .2 1 .2-1.2-.8-7.4-1.6-3.2-2.3 10.8-1.8 24.3 1.7z" fill="#f89820"/>
+      </svg>
+      <span class="tech__name">Java</span>
+    </div>
+
+    <!-- Spring Boot -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="Spring Boot">
+        <circle cx="16" cy="16" r="14" fill="#6DB33F" opacity=".15"/>
+        <path d="M27 5c0 0-5 1-9.5 6C12.5 16.2 10 24 4 27c0 0 5 1.5 11-3.5S30 8 27 5z" fill="#6DB33F"/>
+        <circle cx="9" cy="27" r="2" fill="#6DB33F"/>
+      </svg>
+      <span class="tech__name">Spring Boot</span>
+    </div>
+
+    <!-- Docker -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="Docker">
+        <rect x="3" y="12" width="5" height="4" rx="1" fill="#2496ED"/>
+        <rect x="9" y="12" width="5" height="4" rx="1" fill="#2496ED"/>
+        <rect x="15" y="12" width="5" height="4" rx="1" fill="#2496ED"/>
+        <rect x="9" y="7" width="5" height="4" rx="1" fill="#2496ED"/>
+        <rect x="15" y="7" width="5" height="4" rx="1" fill="#2496ED"/>
+        <path d="M28 14.5c-.5-1.5-2-2-3.5-1.5-.3-2.5-2.5-3.5-4-3h-.5c.5 3.5-1 6-5 7.5-2 .5-3 .5-5 .5H4c.5 3 2 5 5 6 2 .5 4 .5 6 0 5-1.5 8-5 9-9l4-1z" fill="#2496ED"/>
+      </svg>
+      <span class="tech__name">Docker</span>
+    </div>
+
+    <!-- Kubernetes -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="Kubernetes">
+        <polygon points="16,3 29,10 29,22 16,29 3,22 3,10" fill="none" stroke="#326CE5" stroke-width="1.5"/>
+        <circle cx="16" cy="16" r="3" fill="#326CE5"/>
+        <line x1="16" y1="13" x2="16" y2="6"  stroke="#326CE5" stroke-width="1.2"/>
+        <line x1="16" y1="19" x2="16" y2="26" stroke="#326CE5" stroke-width="1.2"/>
+        <line x1="13.4" y1="14.5" x2="7.2" y2="11" stroke="#326CE5" stroke-width="1.2"/>
+        <line x1="18.6" y1="17.5" x2="24.8" y2="21" stroke="#326CE5" stroke-width="1.2"/>
+        <line x1="13.4" y1="17.5" x2="7.2" y2="21" stroke="#326CE5" stroke-width="1.2"/>
+        <line x1="18.6" y1="14.5" x2="24.8" y2="11" stroke="#326CE5" stroke-width="1.2"/>
+      </svg>
+      <span class="tech__name">Kubernetes</span>
+    </div>
+
+    <!-- PostgreSQL -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="PostgreSQL">
+        <ellipse cx="16" cy="10" rx="10" ry="4" fill="none" stroke="#4169E1" stroke-width="1.5"/>
+        <path d="M6 10v12c0 2.2 4.5 4 10 4s10-1.8 10-4V10" stroke="#4169E1" stroke-width="1.5" fill="none"/>
+        <path d="M6 16c0 2.2 4.5 4 10 4s10-1.8 10-4" stroke="#4169E1" stroke-width="1" fill="none"/>
+        <line x1="22" y1="10" x2="22" y2="4" stroke="#4169E1" stroke-width="1.5"/>
+        <path d="M22 4 q3 0 3 4" stroke="#4169E1" stroke-width="1.2" fill="none"/>
+      </svg>
+      <span class="tech__name">PostgreSQL</span>
+    </div>
+
+    <!-- AWS -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="AWS">
+        <path d="M9 16c0-4 3-6 7-6s7 2 7 6c0 3-2 5.5-5 6l.5 1.5H16l.5-1.5C13 21.5 9 19 9 16z" fill="none" stroke="#FF9900" stroke-width="1.5"/>
+        <path d="M4 24 q12 4 24 0" stroke="#FF9900" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M2 22 l2 2 M30 22 l-2 2" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span class="tech__name">AWS</span>
+    </div>
+
+    <!-- Azure -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="Azure">
+        <path d="M13 4L4 26h7l8-14L13 4z" fill="#0078D4" opacity=".8"/>
+        <path d="M19 8l-5 10 8 8H28L19 8z" fill="#0078D4"/>
+      </svg>
+      <span class="tech__name">Azure</span>
+    </div>
+
+    <!-- IBM -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="IBM">
+        <text x="4" y="21" font-family="Arial Black,sans-serif" font-weight="900" font-size="16" fill="#1F70C1" letter-spacing="1">IBM</text>
+      </svg>
+      <span class="tech__name">IBM</span>
+    </div>
+
+    <!-- OpenAI -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="OpenAI">
+        <path d="M16 4a9 9 0 0 1 6.2 15.4A9 9 0 0 1 5 18a9 9 0 0 1 4.8-9.8A9 9 0 0 1 16 4z" stroke="#fff" stroke-width="1.2" fill="none"/>
+        <path d="M12 12 l8 0 M12 16 l8 0 M12 20 l8 0" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      <span class="tech__name">OpenAI</span>
+    </div>
+
+    <!-- Google AI -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="Google AI">
+        <circle cx="16" cy="16" r="10" fill="none" stroke="url(#gaiGrad)" stroke-width="1.5"/>
+        <path d="M16 10v6l4 4" stroke="#4285F4" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="16" cy="16" r="2.5" fill="#4285F4"/>
+        <defs>
+          <linearGradient id="gaiGrad" x1="6" y1="6" x2="26" y2="26">
+            <stop stop-color="#4285F4"/><stop offset=".33" stop-color="#EA4335"/>
+            <stop offset=".67" stop-color="#FBBC05"/><stop offset="1" stop-color="#34A853"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="tech__name">Google AI</span>
+    </div>
+
+    <!-- GitHub -->
+    <div class="tech__item reveal">
+      <svg width="36" height="36" viewBox="0 0 32 32" fill="none" aria-label="GitHub">
+        <path d="M16 3a13 13 0 0 0-4.1 25.3c.6.1.8-.3.8-.6v-2.2c-3.5.8-4.2-1.5-4.2-1.5-.6-1.5-1.4-1.9-1.4-1.9-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.8-.3-5.7-1.4-5.7-6.2 0-1.4.5-2.5 1.3-3.4-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.4 1.3a11.8 11.8 0 0 1 6.2 0c2.4-1.6 3.4-1.3 3.4-1.3.7 1.7.3 3 .1 3.3.8.9 1.3 2 1.3 3.4 0 4.8-3 5.9-5.8 6.2.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6A13 13 0 0 0 16 3z" fill="#fff"/>
+      </svg>
+      <span class="tech__name">GitHub</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     PRODUCTS
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section" id="products" aria-labelledby="products-title">
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-eyebrow">Our Products</div>
+      <h2 class="section-title" id="products-title">
+        Purpose-Built for <span class="text-gradient">Enterprise AI</span>
+      </h2>
+      <p class="section-subtitle">
+        Four flagship product lines designed to take your business from legacy operations
+        to AI-powered excellence.
+      </p>
+    </div>
+
+    <div class="products__grid stagger-children">
+
+      <!-- AI Agents -->
+      <div class="product-card reveal hover-lift">
+        <div class="product-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4F8CFF" stroke-width="1.8" aria-hidden="true">
+            <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+            <path d="M8 14a6 6 0 0 0-4 5.6V21h16v-1.4A6 6 0 0 0 16 14"/>
+            <path d="M9 8h6"/>
+            <circle cx="9" cy="12" r="1" fill="#4F8CFF"/>
+            <circle cx="15" cy="12" r="1" fill="#4F8CFF"/>
+          </svg>
+        </div>
+        <span class="badge badge--blue">New</span>
+        <h3 class="product-card__title">AI Agents</h3>
+        <p class="product-card__desc">
+          Deploy intelligent AI employees that handle complex workflows autonomously.
+          From customer support to data analysis, our agents integrate with your
+          existing systems and operate around the clock.
+        </p>
+        <ul class="product-card__features" aria-label="Features">
+          <li class="product-card__feature">LLM-powered decision engine</li>
+          <li class="product-card__feature">Multi-step task orchestration</li>
+          <li class="product-card__feature">Enterprise SSO & audit logs</li>
+        </ul>
+        <div class="product-card__footer">
+          <a href="products.html#ai-agents" class="btn btn--outline-accent btn--sm">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Enterprise APIs -->
+      <div class="product-card reveal hover-lift">
+        <div class="product-card__icon product-card__icon--purple">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" aria-hidden="true">
+            <rect x="2" y="6" width="20" height="12" rx="2"/>
+            <path d="M6 10h.01M9 10h.01M6 14h12"/>
+          </svg>
+        </div>
+        <span class="badge badge--purple">Core</span>
+        <h3 class="product-card__title">Enterprise APIs</h3>
+        <p class="product-card__desc">
+          Production-grade backend platforms built on Java, Spring Boot, and
+          cloud-native infrastructure. High-throughput, secure, and designed for
+          millions of requests per day.
+        </p>
+        <ul class="product-card__features" aria-label="Features">
+          <li class="product-card__feature">OpenAPI 3.0 specification</li>
+          <li class="product-card__feature">mTLS + OAuth 2.0 security</li>
+          <li class="product-card__feature">99.99% SLA guarantee</li>
+        </ul>
+        <div class="product-card__footer">
+          <a href="products.html#enterprise-apis" class="btn btn--outline-accent btn--sm">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Workflow Automation -->
+      <div class="product-card reveal hover-lift">
+        <div class="product-card__icon product-card__icon--green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00E5A8" stroke-width="1.8" aria-hidden="true">
+            <path d="M3 12h4l3-9 4 18 3-9h4"/>
+          </svg>
+        </div>
+        <span class="badge badge--green">Popular</span>
+        <h3 class="product-card__title">Workflow Automation</h3>
+        <p class="product-card__desc">
+          Transform repetitive business processes into intelligent, self-running
+          workflows. Connect any system, eliminate manual work, and get complete
+          visibility into every step.
+        </p>
+        <ul class="product-card__features" aria-label="Features">
+          <li class="product-card__feature">Visual drag-and-drop builder</li>
+          <li class="product-card__feature">1000+ pre-built connectors</li>
+          <li class="product-card__feature">Real-time monitoring</li>
+        </ul>
+        <div class="product-card__footer">
+          <a href="products.html#workflow" class="btn btn--outline-accent btn--sm">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Cloud Consulting -->
+      <div class="product-card reveal hover-lift">
+        <div class="product-card__icon product-card__icon--orange">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="1.8" aria-hidden="true">
+            <path d="M18 10h-1.3A7 7 0 1 0 6 18h12a4 4 0 0 0 0-8z"/>
+          </svg>
+        </div>
+        <span class="badge badge--new">Expert</span>
+        <h3 class="product-card__title">Cloud Consulting</h3>
+        <p class="product-card__desc">
+          From architecture reviews to full cloud migrations. Our certified
+          architects help you design resilient, cost-efficient infrastructure
+          on AWS, Azure, and GCP.
+        </p>
+        <ul class="product-card__features" aria-label="Features">
+          <li class="product-card__feature">Multi-cloud strategy</li>
+          <li class="product-card__feature">Cost optimisation audits</li>
+          <li class="product-card__feature">IaC & GitOps pipelines</li>
+        </ul>
+        <div class="product-card__footer">
+          <a href="products.html#cloud" class="btn btn--outline-accent btn--sm">
+            Learn More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     SOLUTIONS
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="solutions" aria-labelledby="solutions-title">
+  <div class="container">
+
+    <div class="section-header section-header--center">
+      <div class="section-eyebrow">Solutions</div>
+      <h2 class="section-title" id="solutions-title">
+        End-to-End <span class="text-gradient">Technology Solutions</span>
+      </h2>
+      <p class="section-subtitle">
+        Whatever the challenge, we have the expertise to design, build and deliver.
+      </p>
+    </div>
+
+    <div class="solutions__grid stagger-children">
+
+      <div class="solution-card reveal">
+        <div class="solution-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4F8CFF" stroke-width="1.8" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>
+        </div>
+        <h3 class="solution-card__title">Enterprise Integration</h3>
+        <p class="solution-card__desc">Seamlessly connect legacy systems, SaaS platforms, and custom applications using event-driven architecture.</p>
+      </div>
+
+      <div class="solution-card reveal">
+        <div class="solution-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 class="solution-card__title">Digital Transformation</h3>
+        <p class="solution-card__desc">Modernise your technology stack and operating model to unlock new efficiencies and competitive advantages.</p>
+      </div>
+
+      <div class="solution-card reveal">
+        <div class="solution-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00E5A8" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><path d="M5.6 5.6l2.1 2.1M16.2 16.2l2.1 2.1M5.6 18.4l2.1-2.1M16.2 7.8l2.1-2.1"/></svg>
+        </div>
+        <h3 class="solution-card__title">AI Automation</h3>
+        <p class="solution-card__desc">Automate complex, judgment-intensive processes using state-of-the-art language models and custom AI pipelines.</p>
+      </div>
+
+      <div class="solution-card reveal">
+        <div class="solution-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4F8CFF" stroke-width="1.8" aria-hidden="true"><path d="M18 10h-1.3A7 7 0 1 0 6 18h12a4 4 0 0 0 0-8z"/></svg>
+        </div>
+        <h3 class="solution-card__title">Cloud Native Development</h3>
+        <p class="solution-card__desc">Build microservices, serverless functions, and containerised applications designed for infinite scale.</p>
+      </div>
+
+      <div class="solution-card reveal">
+        <div class="solution-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" aria-hidden="true"><path d="M2 20h20M5 20V8l7-4 7 4v12"/><path d="M9 20v-5h6v5"/></svg>
+        </div>
+        <h3 class="solution-card__title">Backend Engineering</h3>
+        <p class="solution-card__desc">Robust, high-performance backend systems built with Java, Spring Boot, Go, and PostgreSQL.</p>
+      </div>
+
+      <div class="solution-card reveal">
+        <div class="solution-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00E5A8" stroke-width="1.8" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M9 10h.01M6 14h12"/></svg>
+        </div>
+        <h3 class="solution-card__title">API Development</h3>
+        <p class="solution-card__desc">Design-first REST and GraphQL APIs with auto-generated documentation, versioning, and developer portals.</p>
+      </div>
+
+      <div class="solution-card reveal">
+        <div class="solution-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4F8CFF" stroke-width="1.8" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="19" r="2"/><path d="M7 12h3M14 12h3M12 7v3M12 14v3"/></svg>
+        </div>
+        <h3 class="solution-card__title">Microservices</h3>
+        <p class="solution-card__desc">Decompose monoliths into independently deployable services with service mesh, observability, and zero-downtime releases.</p>
+      </div>
+
+      <div class="solution-card reveal">
+        <div class="solution-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3 class="solution-card__title">Consulting</h3>
+        <p class="solution-card__desc">Strategic technology advisory — from architecture reviews and roadmap planning to fractional CTO engagements.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     WHY KRIVAAN LABS
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section" id="why" aria-labelledby="why-title">
+  <div class="container">
+
+    <div class="section-header section-header--center">
+      <div class="section-eyebrow">Why Us</div>
+      <h2 class="section-title" id="why-title">
+        Why <span class="text-gradient">Krivaan Labs</span>
+      </h2>
+      <p class="section-subtitle">
+        We combine deep technical expertise with a product mindset to deliver systems
+        that work in the real world.
+      </p>
+    </div>
+
+    <div class="why__grid stagger-children">
+
+      <div class="why-card reveal">
+        <div class="why-card__icon" aria-hidden="true">🤖</div>
+        <h3 class="why-card__title">AI First</h3>
+        <p class="why-card__desc">Every product we build is designed with AI at its core. Not bolted on as an afterthought, but woven into the architecture from day one.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-card__icon" aria-hidden="true">🏢</div>
+        <h3 class="why-card__title">Enterprise Grade</h3>
+        <p class="why-card__desc">Fortune-500-ready from day one. SOC 2 aligned, GDPR compliant, with audit trails, role-based access, and enterprise SSO support.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-card__icon" aria-hidden="true">☁️</div>
+        <h3 class="why-card__title">Cloud Native</h3>
+        <p class="why-card__desc">We build for the cloud, not just in the cloud. Containers, Kubernetes, serverless — we use the right tool for every problem.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-card__icon" aria-hidden="true">🔒</div>
+        <h3 class="why-card__title">Secure by Design</h3>
+        <p class="why-card__desc">Security isn't a layer we add later. Threat modelling, zero-trust networks, and automated vulnerability scanning are built into our process.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-card__icon" aria-hidden="true">⚡</div>
+        <h3 class="why-card__title">Fast Delivery</h3>
+        <p class="why-card__desc">CI/CD pipelines, automated testing, and iterative delivery mean you see working software in weeks, not months.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-card__icon" aria-hidden="true">📈</div>
+        <h3 class="why-card__title">Scalable Architecture</h3>
+        <p class="why-card__desc">Systems designed to handle 10x your current load without re-architecting. Horizontal scaling, caching, and optimised data models from the start.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     STATS
+════════════════════════════════════════════════════════════════════════ -->
+<section class="stats section" id="stats" aria-label="Company statistics">
+  <div class="container">
+    <div class="stats__grid">
+
+      <div class="stat-item reveal">
+        <div class="stat-item__value" data-count="50" data-suffix="+">0+</div>
+        <div class="stat-item__label">Projects Delivered</div>
+      </div>
+
+      <div class="stat-item reveal">
+        <div class="stat-item__value" data-count="20" data-suffix="+">0+</div>
+        <div class="stat-item__label">Enterprise Clients</div>
+      </div>
+
+      <div class="stat-item reveal">
+        <div class="stat-item__value" data-count="8" data-suffix="+">0+</div>
+        <div class="stat-item__label">Countries Served</div>
+      </div>
+
+      <div class="stat-item reveal">
+        <div class="stat-item__value" data-count="15" data-suffix="+">0+</div>
+        <div class="stat-item__label">Engineers</div>
+      </div>
+
+      <div class="stat-item reveal">
+        <div class="stat-item__value" data-count="3" data-suffix="+">0+</div>
+        <div class="stat-item__label">Years Experience</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     TEAM PREVIEW
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section" id="team" aria-labelledby="team-title">
+  <div class="container">
+
+    <div class="section-header section-header--center">
+      <div class="section-eyebrow">Our Team</div>
+      <h2 class="section-title" id="team-title">
+        The People Behind <span class="text-gradient">Krivaan Labs</span>
+      </h2>
+      <p class="section-subtitle">
+        A tight-knit team of engineers, researchers, and product builders obsessed with
+        making AI practical for the enterprise.
+      </p>
+    </div>
+
+    <div class="team__grid stagger-children">
+
+      <div class="team-card reveal">
+        <div class="team-card__avatar" aria-hidden="true">KR</div>
+        <div>
+          <div class="team-card__name">Krivaan Rajput</div>
+          <div class="team-card__role">Founder & CEO</div>
+          <div class="team-card__dept">Leadership</div>
+        </div>
+        <p class="team-card__bio">
+          Visionary engineer and entrepreneur with a passion for applying AI to real-world
+          enterprise challenges. Drives product strategy, architecture decisions, and client partnerships.
+        </p>
+        <div class="team-card__links">
+          <a href="https://linkedin.com/in/krivaanrajput" aria-label="Krivaan LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.93v5.68H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://github.com/krivaanlabs" aria-label="Krivaan GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.08.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.57.69.47A10 10 0 0 0 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="team-card__avatar" aria-hidden="true" style="background:linear-gradient(135deg,#8B5CF6,#00E5A8)">AK</div>
+        <div>
+          <div class="team-card__name">Arjun Kumar</div>
+          <div class="team-card__role">Senior Software Engineer</div>
+          <div class="team-card__dept">Engineering</div>
+        </div>
+        <p class="team-card__bio">
+          Full-stack architect with deep expertise in Java, Spring Boot, and cloud-native
+          systems. Leads the backend engineering team and platform reliability initiatives.
+        </p>
+        <div class="team-card__links">
+          <a href="#" aria-label="Arjun LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.93v5.68H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="#" aria-label="Arjun GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.08.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.57.69.47A10 10 0 0 0 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="team-card__avatar" aria-hidden="true" style="background:linear-gradient(135deg,#00E5A8,#4F8CFF)">PS</div>
+        <div>
+          <div class="team-card__name">Priya Sharma</div>
+          <div class="team-card__role">AI & Backend Systems</div>
+          <div class="team-card__dept">AI Research</div>
+        </div>
+        <p class="team-card__bio">
+          Machine learning engineer with expertise in LLM fine-tuning, RAG pipelines,
+          and building AI systems that scale in production environments.
+        </p>
+        <div class="team-card__links">
+          <a href="#" aria-label="Priya LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.93v5.68H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="#" aria-label="Priya GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.08.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.57.69.47A10 10 0 0 0 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:var(--sp-10)">
+      <a href="about.html#team" class="btn btn--ghost">Meet the Full Team</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     CTA BANNER
+════════════════════════════════════════════════════════════════════════ -->
+<section class="section" aria-label="Call to action">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="cta-banner__inner">
+        <h2 class="cta-banner__title">
+          Ready to Build Something <span class="text-gradient">Extraordinary?</span>
+        </h2>
+        <p class="cta-banner__subtitle">
+          Let's talk about how Krivaan Labs can help you design, build, and ship
+          AI-powered software that drives real business outcomes.
+        </p>
+        <div class="cta-banner__buttons">
+          <a href="contact.html" class="btn btn--primary btn--lg">Start a Project</a>
+          <a href="contact.html" class="btn btn--ghost btn--lg">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+
+    <!-- Newsletter bar -->
+    <div class="footer__newsletter">
+      <div class="footer__newsletter-text">
+        <h4>Stay in the loop</h4>
+        <p>Get the latest on AI, engineering, and Krivaan Labs updates.</p>
+      </div>
+      <form class="footer__newsletter-form" id="newsletter-form" aria-label="Newsletter signup" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" autocomplete="email" required />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Main grid -->
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo" aria-label="Krivaan Labs – Home">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="url(#footerLogoGrad)"/>
+            <path d="M8 10l8 6-8 6V10z" fill="#fff" opacity=".9"/>
+            <path d="M17 10h7v12h-7l5-6-5-6z" fill="#fff" opacity=".6"/>
+            <defs>
+              <linearGradient id="footerLogoGrad" x1="0" y1="0" x2="32" y2="32">
+                <stop offset="0%" stop-color="#4F8CFF"/>
+                <stop offset="100%" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          Krivaan Labs
+        </a>
+        <p class="footer__tagline">
+          Building intelligent software for businesses of tomorrow. AI, automation, and
+          enterprise engineering at the frontier.
+        </p>
+        <div class="footer__social" aria-label="Social media links">
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/company/krivaanlabs" aria-label="Krivaan Labs on LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.93v5.68H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/krivaanlabs" aria-label="Krivaan Labs on GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.08.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.57.69.47A10 10 0 0 0 12 2z"/></svg>
+          </a>
+          <!-- Twitter/X -->
+          <a href="https://twitter.com/krivaanlabs" aria-label="Krivaan Labs on Twitter" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 4h3.09l-6.75 7.72L22.5 20h-6.22l-4.87-6.38L5.76 20H2.67l7.22-8.26L2 4h6.38l4.4 5.77L18.24 4zm-1.08 14.4h1.71L6.9 5.74H5.08l12.08 12.66z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">Products</h3>
+        <ul class="footer__links">
+          <li><a href="products.html#ai-agents">AI Agents</a></li>
+          <li><a href="products.html#enterprise-apis">Enterprise APIs</a></li>
+          <li><a href="products.html#workflow">Workflow Automation</a></li>
+          <li><a href="products.html#cloud">Cloud Consulting</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">Company</h3>
+        <ul class="footer__links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">Legal</h3>
+        <ul class="footer__links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        &copy; <span id="copy-year">2025</span> Krivaan Labs. All rights reserved.
+      </p>
+      <nav class="footer__legal" aria-label="Legal links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+<!-- JS modules -->
+<script type="module" src="js/app.js"></script>
+<script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

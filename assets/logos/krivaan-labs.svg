@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F8CFF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <!-- Icon -->
+  <rect x="0" y="5" width="40" height="40" rx="8" fill="url(#lg)"/>
+  <path d="M9 15l10 10-10 10V15z" fill="white" opacity="0.95"/>
+  <path d="M20 15h10v20H20l8-10-8-10z" fill="white" opacity="0.6"/>
+  <!-- Wordmark -->
+  <text x="48" y="33" font-family="Space Grotesk, Inter, sans-serif" font-weight="700" font-size="20" fill="#F8FAFC" letter-spacing="-0.5">Krivaan Labs</text>
+</svg>

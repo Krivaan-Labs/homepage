@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 – Page Not Found | Krivaan Labs</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<main id="main-content">
+  <div class="aurora" aria-hidden="true">
+    <div class="aurora__orb aurora__orb--1" style="opacity:0.3"></div>
+    <div class="aurora__orb aurora__orb--2" style="opacity:0.25"></div>
+  </div>
+
+  <div class="error-page">
+    <div style="animation: fadeInUp 0.6s var(--ease-out-cubic) both">
+      <div class="error-page__code" aria-label="404 error">404</div>
+      <h1 class="error-page__title">Page Not Found</h1>
+      <p class="error-page__desc">
+        Looks like this page drifted into the void. Let's get you back to something useful.
+      </p>
+      <div style="display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap">
+        <a href="index.html" class="btn btn--primary btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Back to Home
+        </a>
+        <a href="contact.html" class="btn btn--ghost btn--lg">Contact Us</a>
+      </div>
+
+      <!-- Quick nav -->
+      <nav style="margin-top:var(--sp-12)" aria-label="Quick navigation">
+        <p style="font-size:var(--fs-xs);font-weight:var(--fw-semibold);letter-spacing:var(--ls-wider);text-transform:uppercase;color:var(--clr-text-3);margin-bottom:var(--sp-4)">Or find what you're looking for:</p>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);justify-content:center">
+          <a href="products.html" class="btn btn--ghost btn--sm">Products</a>
+          <a href="solutions.html" class="btn btn--ghost btn--sm">Solutions</a>
+          <a href="about.html" class="btn btn--ghost btn--sm">About</a>
+          <a href="careers.html" class="btn btn--ghost btn--sm">Careers</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
